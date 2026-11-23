@@ -25,7 +25,7 @@ O laboratório foi estruturado no **Oracle VirtualBox** utilizando rede interna 
 └── README.md             # Documentação completa do projeto
 
 
-## **Desafio final: Pentest e análise de vulnerabilidades**
+**Desafio final: Pentest e análise de vulnerabilidades**
 
 Este projeto faz parte do desafio final do curso Santander – Cibersegurança do Zero à Prática. Nele, usei o Kali Linux para analisar uma máquina de laboratório e testar o acesso a alguns de seus serviços.
 
