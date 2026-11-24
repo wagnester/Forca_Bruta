@@ -38,7 +38,10 @@ Ferramentas utilizadas
 
 Primeiro, criei uma pasta para guardar os arquivos do exercício:
 
+![01_FTP](https://github.com/wagnester/Forca_Bruta/blob/main/imagens/01_FTP.png);![02_FTP](https://github.com/wagnester/Forca_Bruta/blob/main/imagens/02_FTP.png)
+
 mkdir desafio-medusa
+
 cd desafio-medusa
 
 Depois, montei uma lista de usuários e outra de senhas. Essas listas são usadas pelo Medusa durante os testes:
@@ -85,13 +88,17 @@ Neste comando:
 
 O resultado mostrou uma combinação válida para o usuário msfadmin com a senha msfadmin. Isso demonstra como senhas simples ou repetidas podem facilitar o acesso.
 
+![03_FTP](https://github.com/wagnester/Forca_Bruta/blob/main/imagens/03_FTP.png)
+
 ### 3. Acesso ao DVWA
 
 Também acessei o DVWA pelo navegador para conhecer a aplicação e sua área de teste de força bruta:
 
-http://192.168.56.101/dvwa/
+http://192.168.56.101/dvwa/  
 
 Na tela de login, observei a requisição enviada pelo formulário. A captura mostra os campos enviados, como username, password e Login. Também abri a página Brute Force do DVWA, que permite estudar esse tipo de falha em um ambiente próprio para treinamento.
+
+![04_DVWA](https://github.com/wagnester/Forca_Bruta/blob/main/imagens/04_DVWA.png); ![05_DVWA](https://github.com/wagnester/Forca_Bruta/blob/main/imagens/05_DVWA.png); ![06_DVWA](https://github.com/wagnester/Forca_Bruta/blob/main/imagens/06_DVWA.png)
 
 ### 4. Enumeração do Samba
 
@@ -125,6 +132,8 @@ Depois, executei o Medusa no módulo Samba:
 medusa -h 192.168.56.101 -U smb_users.txt -P senhas_spray.txt -M smbnt -t 2
 
 Aqui, -M smbnt indica o módulo de teste para Samba/Windows e -t 2 limita o teste a duas tentativas simultâneas. O resultado encontrou a combinação msfadmin / msfadmin, confirmando que ela funcionava no ambiente do laboratório.
+
+![07_DVWA](https://github.com/wagnester/Forca_Bruta/blob/main/imagens/07_Spraying.png); ![08_DVWA](https://github.com/wagnester/Forca_Bruta/blob/main/imagens/08_Spraying.png); ![09_DVWA](https://github.com/wagnester/Forca_Bruta/blob/main/imagens/09_Spraying.png)
 
 O que aprendi
 
